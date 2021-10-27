@@ -51,4 +51,14 @@ class User extends Authenticatable
     {
         return $this->hasOne(Address::class);
     }
+
+    /**
+     * Get the articles published by the user.
+     * 
+     * @return @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function articles()
+    {
+        return $this->hasMany(Article::class);
+    }
 }
