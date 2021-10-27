@@ -30,4 +30,7 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'jsonplaceholder' => [
+        'host' => env('JSONPLACEHOLDER_HOST', 'https://jsonplaceholder.typicode.com'),
+    ],
 ];
