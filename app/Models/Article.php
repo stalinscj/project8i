@@ -29,4 +29,14 @@ class Article extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    /**
+     * Get the labels of the articles.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
+    public function labels()
+    {
+        return $this->belongsToMany(Label::class);
+    }
 }
